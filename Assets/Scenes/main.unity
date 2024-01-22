@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 20319783}
   - component: {fileID: 20319782}
   - component: {fileID: 20319781}
+  - component: {fileID: 20319784}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -228,6 +229,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20319779}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &20319784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20319779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 1877173017}
+  defaultOrbitCenter: {fileID: 20319779}
+  orbitSpeed: 0.00606
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &70326208
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +258,7 @@ GameObject:
   - component: {fileID: 70326209}
   - component: {fileID: 70326212}
   - component: {fileID: 70326211}
-  - component: {fileID: 70326210}
+  - component: {fileID: 70326213}
   m_Layer: 0
   m_Name: EarthImageTarget
   m_TagString: Untagged
@@ -263,25 +282,6 @@ Transform:
   - {fileID: 1582130911}
   m_Father: {fileID: 193251475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &70326210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70326208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 70326212}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: terra_scaled
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 70326212}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &70326211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +352,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 70326210}
+  mPreview: {fileID: 70326213}
+--- !u!114 &70326213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70326208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 70326212}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: terra_scaled
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 70326212}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &173421743
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +384,7 @@ GameObject:
   - component: {fileID: 173421747}
   - component: {fileID: 173421746}
   - component: {fileID: 173421745}
+  - component: {fileID: 173421748}
   m_Layer: 0
   m_Name: venus
   m_TagString: Untagged
@@ -458,6 +478,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173421743}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &173421748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173421743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 0}
+  defaultOrbitCenter: {fileID: 173421743}
+  orbitSpeed: 10
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &193251474
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +638,7 @@ GameObject:
   - component: {fileID: 227571270}
   - component: {fileID: 227571269}
   - component: {fileID: 227571268}
+  - component: {fileID: 227571271}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -693,6 +732,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227571266}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &227571271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227571266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 1877173017}
+  defaultOrbitCenter: {fileID: 227571266}
+  orbitSpeed: 0.0119
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1001 &272084936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -764,7 +821,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1003060251}
   m_SourcePrefab: {fileID: 100100000, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
 --- !u!4 &272084937 stripped
 Transform:
@@ -842,7 +902,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2010515698}
   m_SourcePrefab: {fileID: 100100000, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
 --- !u!4 &313797018 stripped
 Transform:
@@ -860,7 +923,7 @@ GameObject:
   - component: {fileID: 385458689}
   - component: {fileID: 385458692}
   - component: {fileID: 385458691}
-  - component: {fileID: 385458690}
+  - component: {fileID: 385458693}
   m_Layer: 0
   m_Name: MarsImageTarget
   m_TagString: Untagged
@@ -884,25 +947,6 @@ Transform:
   - {fileID: 1728137970}
   m_Father: {fileID: 193251475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &385458690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385458688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 385458692}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: marte_scaled
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 385458692}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &385458691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,7 +1017,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 385458690}
+  mPreview: {fileID: 385458693}
+--- !u!114 &385458693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385458688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 385458692}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: marte_scaled
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 385458692}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &441689367
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,6 +1049,7 @@ GameObject:
   - component: {fileID: 441689371}
   - component: {fileID: 441689370}
   - component: {fileID: 441689369}
+  - component: {fileID: 441689372}
   m_Layer: 0
   m_Name: mercury
   m_TagString: Untagged
@@ -1079,6 +1143,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441689367}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &441689372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441689367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 0}
+  defaultOrbitCenter: {fileID: 441689367}
+  orbitSpeed: 10
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &471413735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1173,7 @@ GameObject:
   - component: {fileID: 471413739}
   - component: {fileID: 471413738}
   - component: {fileID: 471413737}
+  - component: {fileID: 471413740}
   m_Layer: 0
   m_Name: sun
   m_TagString: Untagged
@@ -1184,6 +1267,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471413735}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &471413740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471413735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 0}
+  defaultOrbitCenter: {fileID: 471413735}
+  orbitSpeed: 10
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &473871467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,7 +1389,7 @@ GameObject:
   - component: {fileID: 503078404}
   - component: {fileID: 503078407}
   - component: {fileID: 503078406}
-  - component: {fileID: 503078405}
+  - component: {fileID: 503078408}
   m_Layer: 0
   m_Name: SunImageTarget
   m_TagString: Untagged
@@ -1312,25 +1413,6 @@ Transform:
   - {fileID: 471413736}
   m_Father: {fileID: 193251475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &503078405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503078403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 503078407}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: sol_scaled
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 503078407}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &503078406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,7 +1483,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 503078405}
+  mPreview: {fileID: 503078408}
+--- !u!114 &503078408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503078403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 503078407}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: sol_scaled
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 503078407}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!21 &513679270
 Material:
   serializedVersion: 8
@@ -1480,6 +1581,7 @@ GameObject:
   - component: {fileID: 902162056}
   - component: {fileID: 902162055}
   - component: {fileID: 902162054}
+  - component: {fileID: 902162057}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -1573,6 +1675,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902162052}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &902162057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902162052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 1877173017}
+  defaultOrbitCenter: {fileID: 902162052}
+  orbitSpeed: 0.53
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
+--- !u!1 &1003060250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
+  m_PrefabInstance: {fileID: 272084936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1003060251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003060250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 1877173017}
+  defaultOrbitCenter: {fileID: 1003060250}
+  orbitSpeed: 0.034013
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &1003820087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,6 +1728,7 @@ GameObject:
   - component: {fileID: 1003820091}
   - component: {fileID: 1003820090}
   - component: {fileID: 1003820089}
+  - component: {fileID: 1003820092}
   m_Layer: 0
   m_Name: venus
   m_TagString: Untagged
@@ -1678,6 +1822,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003820087}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1003820092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003820087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 1877173017}
+  defaultOrbitCenter: {fileID: 1003820087}
+  orbitSpeed: -1.62
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &1007244926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,7 +1934,7 @@ GameObject:
   - component: {fileID: 1044930918}
   - component: {fileID: 1044930921}
   - component: {fileID: 1044930920}
-  - component: {fileID: 1044930919}
+  - component: {fileID: 1044930922}
   m_Layer: 0
   m_Name: JupiterImageTarget
   m_TagString: Untagged
@@ -1796,25 +1958,6 @@ Transform:
   - {fileID: 1483686136}
   m_Father: {fileID: 193251475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1044930919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044930917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1044930921}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: jupiter_scaled
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1044930921}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1044930920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1885,7 +2028,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1044930919}
+  mPreview: {fileID: 1044930922}
+--- !u!114 &1044930922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044930917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1044930921}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: jupiter_scaled
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1044930921}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1085486177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,7 +2059,7 @@ GameObject:
   - component: {fileID: 1085486178}
   - component: {fileID: 1085486181}
   - component: {fileID: 1085486180}
-  - component: {fileID: 1085486179}
+  - component: {fileID: 1085486182}
   m_Layer: 0
   m_Name: NeptuneImageTarget
   m_TagString: Untagged
@@ -1921,25 +2083,6 @@ Transform:
   - {fileID: 1224161754}
   m_Father: {fileID: 193251475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1085486179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085486177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1085486181}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: neturno_scaled
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1085486181}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1085486180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2010,7 +2153,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1085486179}
+  mPreview: {fileID: 1085486182}
+--- !u!114 &1085486182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085486177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1085486181}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: neturno_scaled
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1085486181}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!43 &1097025940
 Mesh:
   m_ObjectHideFlags: 0
@@ -2187,7 +2349,7 @@ GameObject:
   - component: {fileID: 1097207293}
   - component: {fileID: 1097207296}
   - component: {fileID: 1097207295}
-  - component: {fileID: 1097207294}
+  - component: {fileID: 1097207297}
   m_Layer: 0
   m_Name: UranusImageTarget
   m_TagString: Untagged
@@ -2211,25 +2373,6 @@ Transform:
   - {fileID: 1805927676}
   m_Father: {fileID: 193251475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1097207294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097207292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1097207296}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: urano_scaled
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1097207296}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1097207295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2300,7 +2443,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1097207294}
+  mPreview: {fileID: 1097207297}
+--- !u!114 &1097207297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097207292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1097207296}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: urano_scaled
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1097207296}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1105329663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2312,7 +2474,7 @@ GameObject:
   - component: {fileID: 1105329664}
   - component: {fileID: 1105329667}
   - component: {fileID: 1105329666}
-  - component: {fileID: 1105329665}
+  - component: {fileID: 1105329668}
   m_Layer: 0
   m_Name: MercuryImageTarget
   m_TagString: Untagged
@@ -2336,25 +2498,6 @@ Transform:
   - {fileID: 441689368}
   m_Father: {fileID: 193251475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1105329665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105329663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1105329667}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: mercurio_scaled
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1105329667}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1105329666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,7 +2568,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1105329665}
+  mPreview: {fileID: 1105329668}
+--- !u!114 &1105329668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105329663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1105329667}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: mercurio_scaled
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1105329667}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1151752456
 GameObject:
   m_ObjectHideFlags: 0
@@ -2438,6 +2600,7 @@ GameObject:
   - component: {fileID: 1151752460}
   - component: {fileID: 1151752459}
   - component: {fileID: 1151752458}
+  - component: {fileID: 1151752461}
   m_Layer: 0
   m_Name: mercury
   m_TagString: Untagged
@@ -2531,6 +2694,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151752456}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1151752461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151752456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 1877173017}
+  defaultOrbitCenter: {fileID: 1151752456}
+  orbitSpeed: 6.17
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &1224161753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,6 +2724,7 @@ GameObject:
   - component: {fileID: 1224161757}
   - component: {fileID: 1224161756}
   - component: {fileID: 1224161755}
+  - component: {fileID: 1224161758}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -2636,6 +2818,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224161753}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1224161758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224161753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 0}
+  defaultOrbitCenter: {fileID: 1224161753}
+  orbitSpeed: 10
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &1422462791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,7 +2847,7 @@ GameObject:
   - component: {fileID: 1422462792}
   - component: {fileID: 1422462795}
   - component: {fileID: 1422462794}
-  - component: {fileID: 1422462793}
+  - component: {fileID: 1422462796}
   m_Layer: 0
   m_Name: SaturnImageTarget
   m_TagString: Untagged
@@ -2671,25 +2871,6 @@ Transform:
   - {fileID: 313797018}
   m_Father: {fileID: 193251475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1422462793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422462791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1422462795}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: saturn_scaled
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1422462795}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1422462794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2760,7 +2941,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1422462793}
+  mPreview: {fileID: 1422462796}
+--- !u!114 &1422462796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422462791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1422462795}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: saturn_scaled
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1422462795}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!43 &1442655558
 Mesh:
   m_ObjectHideFlags: 0
@@ -2938,6 +3138,7 @@ GameObject:
   - component: {fileID: 1483686139}
   - component: {fileID: 1483686138}
   - component: {fileID: 1483686137}
+  - component: {fileID: 1483686140}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -3031,6 +3232,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483686135}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1483686140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483686135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 0}
+  defaultOrbitCenter: {fileID: 1483686135}
+  orbitSpeed: 10
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &1582130910
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,6 +3262,7 @@ GameObject:
   - component: {fileID: 1582130914}
   - component: {fileID: 1582130913}
   - component: {fileID: 1582130912}
+  - component: {fileID: 1582130915}
   m_Layer: 0
   m_Name: earth
   m_TagString: Untagged
@@ -3136,6 +3356,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582130910}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1582130915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582130910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 0}
+  defaultOrbitCenter: {fileID: 1582130910}
+  orbitSpeed: 10
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &1634032058
 GameObject:
   m_ObjectHideFlags: 0
@@ -3347,6 +3585,7 @@ GameObject:
   - component: {fileID: 1726519877}
   - component: {fileID: 1726519876}
   - component: {fileID: 1726519875}
+  - component: {fileID: 1726519878}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -3440,6 +3679,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726519873}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1726519878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726519873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 1877173017}
+  defaultOrbitCenter: {fileID: 1726519873}
+  orbitSpeed: 0.0833
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &1728137969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3452,6 +3709,7 @@ GameObject:
   - component: {fileID: 1728137973}
   - component: {fileID: 1728137972}
   - component: {fileID: 1728137971}
+  - component: {fileID: 1728137974}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -3545,6 +3803,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728137969}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1728137974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728137969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 0}
+  defaultOrbitCenter: {fileID: 1728137969}
+  orbitSpeed: 10
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &1805927675
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,6 +3833,7 @@ GameObject:
   - component: {fileID: 1805927679}
   - component: {fileID: 1805927678}
   - component: {fileID: 1805927677}
+  - component: {fileID: 1805927680}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -3650,6 +3927,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805927675}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1805927680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805927675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 0}
+  defaultOrbitCenter: {fileID: 1805927675}
+  orbitSpeed: 10
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &1854309387
 GameObject:
   m_ObjectHideFlags: 0
@@ -3662,6 +3957,7 @@ GameObject:
   - component: {fileID: 1854309391}
   - component: {fileID: 1854309390}
   - component: {fileID: 1854309389}
+  - component: {fileID: 1854309392}
   m_Layer: 0
   m_Name: earth
   m_TagString: Untagged
@@ -3755,6 +4051,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854309387}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1854309392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854309387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 1877173017}
+  defaultOrbitCenter: {fileID: 1854309387}
+  orbitSpeed: 10
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &1877173017
 GameObject:
   m_ObjectHideFlags: 0
@@ -3871,7 +4185,7 @@ GameObject:
   - component: {fileID: 2003316682}
   - component: {fileID: 2003316685}
   - component: {fileID: 2003316684}
-  - component: {fileID: 2003316683}
+  - component: {fileID: 2003316686}
   m_Layer: 0
   m_Name: VenusImageTarget
   m_TagString: Untagged
@@ -3895,25 +4209,6 @@ Transform:
   - {fileID: 173421744}
   m_Father: {fileID: 193251475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2003316683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003316681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2003316685}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: venus_scaled
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 2003316685}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2003316684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3984,7 +4279,49 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2003316683}
+  mPreview: {fileID: 2003316686}
+--- !u!114 &2003316686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003316681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 2003316685}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: venus_scaled
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 2003316685}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!1 &2010515697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
+  m_PrefabInstance: {fileID: 313797017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2010515698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010515697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1012f32fa34df4abf89911e23e3625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCenter: {fileID: 0}
+  defaultOrbitCenter: {fileID: 2010515697}
+  orbitSpeed: 10
+  selfRotationSpeed: 20
+  rotateLaterally: 0
+  lateralRotationSpeed: 30
 --- !u!1 &2027779370
 GameObject:
   m_ObjectHideFlags: 0
