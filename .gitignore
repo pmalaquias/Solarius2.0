@@ -82,5 +82,4 @@ UserSettings/
 credentials.json
 credentials.json.meta
 
-#Metadados
-*.meta
+# Metadados
