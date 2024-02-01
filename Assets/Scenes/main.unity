@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -452,6 +452,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 01f3bf00225ea084cb19bfdd5c7d9945, type: 3}
   m_PrefabInstance: {fileID: 107753422}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &182002140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: 01f3bf00225ea084cb19bfdd5c7d9945, type: 3}
+  m_PrefabInstance: {fileID: 1225913157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &182002144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182002140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65ff647ed28e9b458845064fc7719b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 182002140}
 --- !u!1 &193251474
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +847,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1018664272722485354, guid: 3ed8da843790e694e8fb1c4596c35ae4, type: 3}
+      propertyPath: m_TagString
+      value: Venus
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3ed8da843790e694e8fb1c4596c35ae4, type: 3}
       propertyPath: m_Name
       value: 'venus '
@@ -837,8 +859,29 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: 3ed8da843790e694e8fb1c4596c35ae4, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: 3ed8da843790e694e8fb1c4596c35ae4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1010347059}
   m_SourcePrefab: {fileID: 100100000, guid: 3ed8da843790e694e8fb1c4596c35ae4, type: 3}
+--- !u!1 &383925411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: dbb37362c2037ff4e9c7fb138ba1db84, type: 3}
+  m_PrefabInstance: {fileID: 504636158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &383925415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383925411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65ff647ed28e9b458845064fc7719b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 383925411}
 --- !u!1 &385458688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1055,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1018664272722485354, guid: c34389d403a4bc74c8a07378ed17317d, type: 3}
+      propertyPath: m_TagString
+      value: Uranus
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c34389d403a4bc74c8a07378ed17317d, type: 3}
       propertyPath: m_Name
       value: uranus
@@ -1020,7 +1067,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: c34389d403a4bc74c8a07378ed17317d, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: c34389d403a4bc74c8a07378ed17317d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1500577179}
   m_SourcePrefab: {fileID: 100100000, guid: c34389d403a4bc74c8a07378ed17317d, type: 3}
 --- !u!1 &473871467
 GameObject:
@@ -1288,6 +1338,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1018664272722485354, guid: dbb37362c2037ff4e9c7fb138ba1db84, type: 3}
+      propertyPath: m_TagString
+      value: Neptune
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dbb37362c2037ff4e9c7fb138ba1db84, type: 3}
       propertyPath: m_Name
       value: netune
@@ -1296,7 +1350,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: dbb37362c2037ff4e9c7fb138ba1db84, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: dbb37362c2037ff4e9c7fb138ba1db84, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 383925415}
   m_SourcePrefab: {fileID: 100100000, guid: dbb37362c2037ff4e9c7fb138ba1db84, type: 3}
 --- !u!1001 &526144722
 PrefabInstance:
@@ -1752,6 +1809,42 @@ MonoBehaviour:
   selfRotationSpeed: 20
   rotateLaterally: 0
   lateralRotationSpeed: 30
+--- !u!1 &1010347055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: 3ed8da843790e694e8fb1c4596c35ae4, type: 3}
+  m_PrefabInstance: {fileID: 244284567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1010347059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010347055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65ff647ed28e9b458845064fc7719b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 1010347055}
+--- !u!1 &1020260894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
+  m_PrefabInstance: {fileID: 2025270486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1020260898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020260894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65ff647ed28e9b458845064fc7719b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 1020260894}
 --- !u!1 &1044930917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,6 +1970,42 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1044930921}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &1065057176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: 7425a551e4e43d746bb593ac510b244d, type: 3}
+  m_PrefabInstance: {fileID: 1675607540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1065057180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065057176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65ff647ed28e9b458845064fc7719b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 1065057176}
+--- !u!1 &1080667663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: ee4546d65aa03a8488347be575bb88e3, type: 3}
+  m_PrefabInstance: {fileID: 1558406980}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1080667667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080667663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65ff647ed28e9b458845064fc7719b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 1080667663}
 --- !u!1 &1085486177
 GameObject:
   m_ObjectHideFlags: 0
@@ -2636,6 +2765,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1018664272722485354, guid: 01f3bf00225ea084cb19bfdd5c7d9945, type: 3}
+      propertyPath: m_TagString
+      value: Mercury
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 01f3bf00225ea084cb19bfdd5c7d9945, type: 3}
       propertyPath: m_Name
       value: mercury
@@ -2648,8 +2781,29 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: 01f3bf00225ea084cb19bfdd5c7d9945, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: 01f3bf00225ea084cb19bfdd5c7d9945, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 182002144}
   m_SourcePrefab: {fileID: 100100000, guid: 01f3bf00225ea084cb19bfdd5c7d9945, type: 3}
+--- !u!1 &1286311005 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: ad202aff39cc8e74fa3151399ef20b8f, type: 3}
+  m_PrefabInstance: {fileID: 1327441982}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1286311009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286311005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65ff647ed28e9b458845064fc7719b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 1286311005}
 --- !u!4 &1310101774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ad202aff39cc8e74fa3151399ef20b8f, type: 3}
@@ -2715,6 +2869,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1018664272722485354, guid: ad202aff39cc8e74fa3151399ef20b8f, type: 3}
+      propertyPath: m_TagString
+      value: Earth
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad202aff39cc8e74fa3151399ef20b8f, type: 3}
       propertyPath: m_Name
       value: earth (1)
@@ -2723,7 +2881,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: ad202aff39cc8e74fa3151399ef20b8f, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: ad202aff39cc8e74fa3151399ef20b8f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1286311009}
   m_SourcePrefab: {fileID: 100100000, guid: ad202aff39cc8e74fa3151399ef20b8f, type: 3}
 --- !u!1001 &1352707935
 PrefabInstance:
@@ -3132,6 +3293,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1018664272722485354, guid: 4aab28a1ac569624fa6b30ceb3dd34ee, type: 3}
+      propertyPath: m_TagString
+      value: Sun
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4aab28a1ac569624fa6b30ceb3dd34ee, type: 3}
       propertyPath: m_Name
       value: sun
@@ -3156,13 +3321,34 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: 4aab28a1ac569624fa6b30ceb3dd34ee, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: 4aab28a1ac569624fa6b30ceb3dd34ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1903434902}
   m_SourcePrefab: {fileID: 100100000, guid: 4aab28a1ac569624fa6b30ceb3dd34ee, type: 3}
 --- !u!4 &1482552312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7425a551e4e43d746bb593ac510b244d, type: 3}
   m_PrefabInstance: {fileID: 1675607540}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1500577175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: c34389d403a4bc74c8a07378ed17317d, type: 3}
+  m_PrefabInstance: {fileID: 449238340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1500577179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500577175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65ff647ed28e9b458845064fc7719b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 1500577175}
 --- !u!1001 &1558406980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3211,6 +3397,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1018664272722485354, guid: ee4546d65aa03a8488347be575bb88e3, type: 3}
+      propertyPath: m_TagString
+      value: Jupiter
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ee4546d65aa03a8488347be575bb88e3, type: 3}
       propertyPath: m_Name
       value: jupiter
@@ -3219,7 +3409,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: ee4546d65aa03a8488347be575bb88e3, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: ee4546d65aa03a8488347be575bb88e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1080667667}
   m_SourcePrefab: {fileID: 100100000, guid: ee4546d65aa03a8488347be575bb88e3, type: 3}
 --- !u!4 &1610203516 stripped
 Transform:
@@ -3380,6 +3573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1018664272722485354, guid: 7425a551e4e43d746bb593ac510b244d, type: 3}
+      propertyPath: m_TagString
+      value: Mars
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7425a551e4e43d746bb593ac510b244d, type: 3}
       propertyPath: m_Name
       value: mars
@@ -3388,7 +3585,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: 7425a551e4e43d746bb593ac510b244d, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: 7425a551e4e43d746bb593ac510b244d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1065057180}
   m_SourcePrefab: {fileID: 100100000, guid: 7425a551e4e43d746bb593ac510b244d, type: 3}
 --- !u!1 &1683237353
 GameObject:
@@ -3848,6 +4048,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877173017}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1903434900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: 4aab28a1ac569624fa6b30ceb3dd34ee, type: 3}
+  m_PrefabInstance: {fileID: 1472186254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1903434902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903434900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65ff647ed28e9b458845064fc7719b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 1903434900}
 --- !u!4 &1916522583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
@@ -4026,6 +4244,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1018664272722485354, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
+      propertyPath: m_TagString
+      value: Saturn
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
       propertyPath: m_Name
       value: saturn
@@ -4034,7 +4256,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1020260898}
   m_SourcePrefab: {fileID: 100100000, guid: 23d0c7ff0797239499951c80ce663073, type: 3}
 --- !u!4 &2066477409 stripped
 Transform:
