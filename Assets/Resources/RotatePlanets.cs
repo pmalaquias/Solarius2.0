@@ -44,7 +44,7 @@ public class RotatePlanets : MonoBehaviour
                 float prevTouchDeltaMag = (touch1PrevPos - touch2PrevPos).magnitude;
                 float touchDeltaMag = (touch1.position - touch2.position).magnitude;
                 float deltaMagDiff = prevTouchDeltaMag - touchDeltaMag;
-                planet.transform.localScale += new Vector3(1, 1, 1) * deltaMagDiff * Time.deltaTime;
+                planet.transform.localScale -= new Vector3(1, 1, 1) * deltaMagDiff * Time.deltaTime;
             }
         }
         else if (Input.touchCount == 0)
