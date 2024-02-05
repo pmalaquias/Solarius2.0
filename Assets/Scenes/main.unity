@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: 36a7279765f906249af1414bdbb8c3eb, type: 3}
+  - {fileID: 8300000, guid: 0d4d0da753f9b0d48a4c1087e330ebe3, type: 3}
 --- !u!1001 &107753422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 2c6f9e5f655b0dc4d9d49590eb386dbf, type: 3}
 --- !u!1001 &449238340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1429,7 +1429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: 1b1b21a42853ad7449b8e6cc48d75986, type: 3}
+  - {fileID: 8300000, guid: f61ea69ed78e2654e8eef4aaf5e9697b, type: 3}
 --- !u!114 &503078410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2143,7 +2143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 21cf21b2f1cc73c4f8c9b64e4e01239d, type: 3}
 --- !u!1 &1065057176 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: 7425a551e4e43d746bb593ac510b244d, type: 3}
@@ -2320,7 +2320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 93d23e3544812c84e8dcd04972f151d5, type: 3}
 --- !u!1001 &1093070162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2535,7 +2535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 759c0078860873d4ca72843245b9f37e, type: 3}
 --- !u!1 &1105329663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,7 +2699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b0cfcbd37e724124c9c821d2ab4d47d7, type: 3}
 --- !u!4 &1133189478 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2021178655527167927, guid: 4aab28a1ac569624fa6b30ceb3dd34ee, type: 3}
@@ -3781,7 +3781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 3a103d4f61f9f5546ba952f711ab70c4, type: 3}
 --- !u!1001 &1472186254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4958,7 +4958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 832d96c43eeb6324aa92a9506ec63dec, type: 3}
 --- !u!1001 &2025270486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5190,7 +5190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 2044f33e54f250c4aaa1b297dd2618a6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
